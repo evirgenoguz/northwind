@@ -1,8 +1,16 @@
 <table class = "table">
+    <tr>
+        <th>Id</th>
+        <th>Ürün Adı</th>
+        <th>Kategori</th>
+        <th>Adet</th>
+        <th>Fiyat</th>
+    </tr>
     <tr *ngFor = "let product of products">
         <td>{{product.productId}}</td>
         <td>{{product.productName}}</td>
         <td>{{product.categoryId}}</td>
+        <td>{{product.unitsInStock}}</td>
         <td>{{product.unitPrice}}</td>
     </tr>
 </table>
