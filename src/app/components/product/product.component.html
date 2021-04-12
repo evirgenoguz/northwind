@@ -23,7 +23,7 @@
       <th>Kdv'li Fiyat</th>
     </tr>
   </thead>
-  <tr *ngFor="let product of products">
+  <tr *ngFor="let product of products | filter : filterText">
     <td>{{ product.productID }}</td>
     <td>{{ product.productName |uppercase}}</td>
     <td>{{ product.categoryID }}</td>
